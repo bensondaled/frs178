@@ -1,0 +1,10 @@
+api_key = 'kIrE1akPytCbN6dtfZoxmCmU3'
+api_secret = 'EnztGXvO3QDRWGAJZVV6UGrb0pT9EY3D9R9uSmtp1BuZFoMFZQ'
+access_token = '96322197-bzzWFgpdpQD4cFFdqLEEhfhl2t3zhlYhqYFUWf70x'
+access_token_secret = 'vF1nsbQzJeHOdDaFTNy0EREk7UVaDupehPaAZ5vNx5ZBn'
+
+import tweepy as tw
+
+auth = tw.OAuthHandler(api_key, api_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tw.API(auth)
