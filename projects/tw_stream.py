@@ -47,10 +47,15 @@ class KeywordListener(tw.StreamListener):
 
         self.stream = tw.Stream(auth = api.auth, listener=self)
 
+        self.debug = 0
+
     def begin(self):
         self.stream.filter(track=self.keywords, async=True)
 
     def on_status(self, status):
+        if self.debug==0:
+            self.t = status
+            self.debug = 1
         timestamp = time.time()
         text = status.text.lower()
         user = status.author.screen_name
