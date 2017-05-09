@@ -1,0 +1,52 @@
+state,abbreviation,fips
+Alabama,AL,US01
+Alaska,AK,US02
+Arizona,AZ,US04
+Arkansas,AR,US05
+California,CA,US06
+Colorado,CO,US08
+Connecticut,CT,US09
+Delaware,DE,US10
+District of Columbia,DC,US11
+Florida,FL,US12
+Georgia,GA,US13
+Hawaii,HI,US15
+Idaho,ID,US16
+Illinois,IL,US17
+Indiana,IN,US18
+Iowa,IA,US19
+Kansas,KS,US20
+Kentucky,KY,US21
+Louisiana,LA,US22
+Maine,ME,US23
+Montana,MT,US30
+Nebraska,NE,US31
+Nevada,NV,US32
+New Hampshire,NH,US33
+New Jersey,NJ,US34
+New Mexico,NM,US35
+New York,NY,US36
+North Carolina,NC,US37
+North Dakota,ND,US38
+Ohio,OH,US39
+Oklahoma,OK,US40
+Oregon,OR,US41
+Maryland,MD,US24
+Massachusetts,MA,US25
+Michigan,MI,US26
+Minnesota,MN,US27
+Mississippi,MS,US28
+Missouri,MO,US29
+Pennsylvania,PA,US42
+Rhode Island,RI,US44
+South Carolina,SC,US45
+South Dakota,SD,US46
+Tennessee,TN,US47
+Texas,TX,US48
+Utah,UT,US49
+Vermont,VT,US50
+Virginia,VA,US51
+Washington,WA,US53
+West Virginia,WV,US54
+Wisconsin,WI,US55
+Wyoming,WY,US56

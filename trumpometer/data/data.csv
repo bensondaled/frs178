@@ -1,0 +1,52 @@
+abbreviation,state,abbreviation,fips,sentiment
+AL,Alabama,AL,US01,0.0
+AK,Alaska,AK,US02,-0.2793833333333333
+AZ,Arizona,AZ,US04,-0.043642857142857115
+AR,Arkansas,AR,US05,0.0
+CA,California,CA,US06,-0.509325
+CO,Colorado,CO,US08,0.0
+CT,Connecticut,CT,US09,0.0
+DE,Delaware,DE,US10,0.0
+DC,District of Columbia,DC,US11,0.0
+FL,Florida,FL,US12,0.0
+GA,Georgia,GA,US13,0.0
+HI,Hawaii,HI,US15,0.0
+ID,Idaho,ID,US16,0.0
+IL,Illinois,IL,US17,0.0
+IN,Indiana,IN,US18,0.0
+IA,Iowa,IA,US19,0.0
+KS,Kansas,KS,US20,0.0
+KY,Kentucky,KY,US21,0.0
+LA,Louisiana,LA,US22,0.0
+ME,Maine,ME,US23,0.0
+MT,Montana,MT,US30,0.0
+NE,Nebraska,NE,US31,0.0
+NV,Nevada,NV,US32,0.0
+NH,New Hampshire,NH,US33,0.0
+NJ,New Jersey,NJ,US34,-0.17334
+NM,New Mexico,NM,US35,0.0745
+NY,New York,NY,US36,0.14003333333333332
+NC,North Carolina,NC,US37,0.0
+ND,North Dakota,ND,US38,0.0
+OH,Ohio,OH,US39,0.0
+OK,Oklahoma,OK,US40,0.0
+OR,Oregon,OR,US41,0.0
+MD,Maryland,MD,US24,0.0
+MA,Massachusetts,MA,US25,-0.11006
+MI,Michigan,MI,US26,0.0
+MN,Minnesota,MN,US27,-0.08895
+MS,Mississippi,MS,US28,0.0
+MO,Missouri,MO,US29,-0.24159999999999998
+PA,Pennsylvania,PA,US42,-0.1779
+RI,Rhode Island,RI,US44,0.0
+SC,South Carolina,SC,US45,0.0
+SD,South Dakota,SD,US46,0.0
+TN,Tennessee,TN,US47,0.0
+TX,Texas,TX,US48,-0.031683333333333334
+UT,Utah,UT,US49,-0.036300000000000006
+VT,Vermont,VT,US50,-0.04817999999999999
+VA,Virginia,VA,US51,0.11262857142857145
+WA,Washington,WA,US53,-0.11978333333333331
+WV,West Virginia,WV,US54,0.0
+WI,Wisconsin,WI,US55,0.0
+WY,Wyoming,WY,US56,0.0
