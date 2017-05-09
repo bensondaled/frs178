@@ -3,7 +3,7 @@ var csvdata;
 var map = d3.geomap.choropleth()
     .geofile('/d3/d3-geomap/topojson/countries/USA.json')
     .projection(d3.geo.albersUsa)
-    .duration(1)
+    .duration(1000)
     .column('sentiment')
     .unitId('fips')
     .scale(1000)
@@ -27,11 +27,11 @@ function updateMap() {
         csvdata = data;
         map.data = csvdata;
         map.column('sentiment').update();
-        //console.log(csvdata[0]['sentiment']);
+        console.log(csvdata[1]['sentiment']);
         
     });
 
-    setTimeout(updateMap, 1000);
+    setTimeout(updateMap, 5000); // update time
 }
 
 loadMap();

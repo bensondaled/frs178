@@ -15,7 +15,7 @@ n_most_recent = 100
 # Runtime vars
 t0 = time.clock()
 lock = threading.Lock()
-    
+ 
 listener = KeywordListener(filename='data/raw_tweet_stream.csv', keywords=['trump'], rule='and', lock=lock)
 listener.begin()
 
@@ -24,19 +24,20 @@ while True:
     if time.clock() - t0 < interval:
         continue
 
-    #print('Next iteration.')
-
     # read in tweets
     tweets = read_last_nrows('data/raw_tweet_stream.csv', n_most_recent, lock=lock)
     if tweets is None:
         continue
+    print('Next iteration.')
+
     # extract important parameters
-    sents = [get_sentiment(i) for i in tweets.text.values]
     locs = [get_location(i) for _,i in tweets.iterrows()]
+    sents = [get_sentiment(i) for i in tweets.text.values]
     # format data
     data = pd.DataFrame(columns=['sentiment','state'])
     data.loc[:,'sentiment'] = sents
     data.loc[:,'state'] = locs
+    data = data[data.state!=np.nan] # filter out tweets without a location
     mean_by_state = data.groupby('state').sentiment.mean()
     # dump data to file that web interface will read
     dump_data(mean_by_state)

@@ -3,8 +3,10 @@ This file defines a class for constantly reading tweets and writing them to a cs
 It should be called from the main.py file
 """
 
+##
 import tweepy as tw
 import csv, time
+import threading
 
 class KeywordListener(tw.StreamListener):
     """
@@ -47,6 +49,8 @@ class KeywordListener(tw.StreamListener):
         self.f.close()
 
         self.lock = lock
+        if self.lock is None:
+            self.lock = threading.Lock()
 
         # set keywords of interest
         self.keywords = keywords
@@ -88,9 +92,9 @@ class KeywordListener(tw.StreamListener):
 
     def end(self):
         self.stream.disconnect()
-
+##
 if __name__ == '__main__':
-    listener = KeywordListener(api=api, filename='data/raw_tweet_stream.csv', keywords=['trump'], rule='and')
+    listener = KeywordListener(filename='data/raw_tweet_stream.csv', keywords=['trump'], rule='and')
     listener.begin()
 
-    #listener.end()
+    listener.end()
